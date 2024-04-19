@@ -6,12 +6,14 @@ import Cart from "./pages/Cart"
 import Products from "./pages/Products"
 import Shop from "./pages/Shop"
 import SignUp from "./pages/SignUp"
+import Header from "./components/Header"
 
 
 function App() {
 
   return (
     <BrowserRouter>
+    <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/sign-in" element={<SignIn />} />
